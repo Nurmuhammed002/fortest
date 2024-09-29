@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{{ object.title }}</h1>
+<p>{{ object.description }}</p>
+<p>Категория: {{ object.category.name }}</p>
+<a href="{% url 'task-list' %}" class="btn btn-secondary">Назад</a>
+{% endblock %}
